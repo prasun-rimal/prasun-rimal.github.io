@@ -1,5 +1,5 @@
 const revealItems = document.querySelectorAll(
-  ".project-row, .timeline article, .skill-list div, .contact-card, .metrics div"
+  ".about-card, .profile-card, .stats-grid div, .skill-grid article, .project-card, .timeline article, .contact-section"
 );
 
 const revealObserver = new IntersectionObserver(
@@ -11,10 +11,30 @@ const revealObserver = new IntersectionObserver(
       }
     });
   },
-  { threshold: 0.1 }
+  { threshold: 0.14 }
 );
 
 revealItems.forEach((item) => {
   item.classList.add("reveal");
   revealObserver.observe(item);
 });
+
+const sections = document.querySelectorAll("main section[id]");
+const navLinks = document.querySelectorAll(".nav-links a[href^='#']");
+
+const activeObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) {
+        return;
+      }
+
+      navLinks.forEach((link) => {
+        link.classList.toggle("is-active", link.getAttribute("href") === `#${entry.target.id}`);
+      });
+    });
+  },
+  { rootMargin: "-45% 0px -45% 0px", threshold: 0 }
+);
+
+sections.forEach((section) => activeObserver.observe(section));

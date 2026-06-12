@@ -1,216 +1,296 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Prasun Rimal is a software developer with a mathematics and data background, building full-stack applications, optimization tools, and analytical systems."
+      content="Portfolio of Prasun Rimal, a full-stack developer and Mathematics/Computer Science graduate building Java, React, Python, and R projects."
     />
-    <meta name="theme-color" content="#f4f0e8" />
-    <title>Prasun Rimal | Software Developer</title>
-    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-    <link rel="preload" href="assets/portrait.jpg" as="image" />
-    <link rel="stylesheet" href="styles.css?v=2" />
+    <title>Prasun Rimal | Full-Stack Developer</title>
+    <link rel="icon" href="assets/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=4" />
   </head>
   <body>
-    <div class="page">
-      <aside class="intro-panel" aria-label="Profile">
-        <a class="mark" href="#top" aria-label="Prasun Rimal home">PR</a>
-        <div>
-          <p class="eyebrow">Software / Data / Optimization</p>
-          <h1>Prasun Rimal</h1>
-          <p class="role">Mathematics and Computer Science graduate building deployed tools with clean engineering and analytical depth.</p>
-        </div>
-        <img class="portrait" src="assets/portrait.jpg" alt="Prasun Rimal in Brooklyn" />
-        <p class="origin">
-          I moved from Nepal to the United States in 2022. Since then, I have been building a path at the intersection of software engineering, mathematics, and data.
-        </p>
-        <nav class="side-nav" aria-label="Primary navigation">
-          <a href="#work">Work</a>
-          <a href="#experience">Experience</a>
-          <a href="#skills">Skills</a>
-          <a href="#contact">Contact</a>
-        </nav>
-        <div class="quick-links">
-          <a href="assets/Prasun_Rimal_Resume.pdf" target="_blank" rel="noreferrer">Resume</a>
-          <a href="https://github.com/prasun-rimal" target="_blank" rel="noreferrer">GitHub</a>
-          <a href="https://linkedin.com/in/prasunrimal" target="_blank" rel="noreferrer">LinkedIn</a>
-        </div>
-      </aside>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Prasun Rimal home">
+        <span>PR</span>
+        <strong>Prasun.dev</strong>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+        <a class="nav-button" href="assets/Prasun_Rimal_Resume.pdf" target="_blank" rel="noreferrer">Resume</a>
+      </nav>
+    </header>
 
-      <main id="top" class="content">
-        <section class="hero">
-          <p class="eyebrow">Open to software engineering, full-stack, backend, and data-focused roles</p>
-          <h2>I build practical systems: trading dashboards, routing optimizers, and statistical analysis projects.</h2>
-          <p>
-            My strongest work combines production-style software with math-heavy thinking: a deployed Spring Boot/React paper-trading platform, a faculty-advised last-mile delivery optimizer, and an R analysis of NYC crash risk.
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-backdrop" aria-hidden="true"></div>
+        <div class="hero-content">
+          <p class="kicker">Full-stack developer</p>
+          <h1>Building useful software with math, data, and clean engineering.</h1>
+          <p class="hero-copy">
+            I am a Mathematics/Computer Science graduate from St. Joseph's University New York,
+            focused on Java, Spring Boot, React, Python, and R. I build projects that are deployed,
+            testable, and easy to understand.
           </p>
-          <div class="hero-actions">
-            <a class="button dark" href="#work">View projects</a>
-            <a class="button light" href="https://mockmarket-swart.vercel.app" target="_blank" rel="noreferrer">MockMarket live</a>
-            <a class="button light" href="mailto:prasunrimal02@gmail.com">Email me</a>
+          <div class="hero-actions" aria-label="Primary actions">
+            <a class="button primary" href="#projects">View projects</a>
+            <a class="button secondary" href="mailto:prasunrimal02@gmail.com">Contact me</a>
           </div>
-        </section>
+          <div class="social-strip" aria-label="Profile links">
+            <a href="https://github.com/prasun-rimal" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="https://linkedin.com/in/prasunrimal" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a href="https://mockmarket-swart.vercel.app" target="_blank" rel="noreferrer">MockMarket</a>
+          </div>
+        </div>
+      </section>
 
-        <section class="metrics" aria-label="Highlights">
+      <section class="section about-section" id="about">
+        <div class="section-heading">
+          <p class="kicker">About me</p>
+          <h2>From Nepal to New York, now building from Texas.</h2>
+        </div>
+        <div class="about-grid">
+          <article class="about-card">
+            <p>
+              I moved from Nepal to the United States in 2022 to pursue computer science and mathematics.
+              That journey shaped how I work: I learn fast, ask direct questions, and care about building
+              things that make sense in the real world.
+            </p>
+            <p>
+              My recent work includes a deployed paper-trading platform, a faculty-advised route optimizer
+              research project, and an R-based NYC collision analysis. I like projects where algorithms,
+              backend systems, and user experience all have to meet in one finished product.
+            </p>
+          </article>
+          <aside class="profile-card" aria-label="Profile summary">
+            <img src="assets/portrait.jpg" alt="Prasun Rimal in a blue suit near the Brooklyn Bridge" />
+            <div>
+              <strong>Prasun Rimal</strong>
+              <span>Irving, TX</span>
+            </div>
+          </aside>
+        </div>
+        <div class="stats-grid" aria-label="Highlights">
           <div>
             <span>3.811</span>
-            <p>GPA in Mathematics/Computer Science</p>
+            <p>GPA</p>
           </div>
           <div>
-            <span>187K+</span>
-            <p>NYC collision records analyzed</p>
+            <span>6x</span>
+            <p>Dean's List</p>
           </div>
           <div>
-            <span>3</span>
-            <p>portfolio-ready flagship projects</p>
+            <span>2</span>
+            <p>Honor societies</p>
           </div>
-        </section>
-
-        <section id="work" class="section">
-          <div class="section-heading">
-            <p class="eyebrow">Selected Work</p>
-            <h2>Projects</h2>
+          <div>
+            <span>2026</span>
+            <p>B.S. graduate</p>
           </div>
+        </div>
+      </section>
 
-          <article class="project-row featured">
-            <a class="project-thumb" href="https://mockmarket-swart.vercel.app" target="_blank" rel="noreferrer" aria-label="Open MockMarket live demo">
-              <img src="assets/mockmarket-dashboard.jpg" alt="MockMarket dashboard" />
+      <section class="section skills-section" id="skills">
+        <div class="section-heading compact">
+          <p class="kicker">Toolkit</p>
+          <h2>Comfortable across backend, frontend, data, and deployment.</h2>
+        </div>
+        <div class="skill-grid">
+          <article>
+            <h3>Backend</h3>
+            <p>Java 21, Spring Boot, REST APIs, JWT auth, PostgreSQL, JPA, Maven, Docker</p>
+          </article>
+          <article>
+            <h3>Frontend</h3>
+            <p>React, TypeScript, JavaScript, responsive UI, Vite, Vercel, GitHub Pages</p>
+          </article>
+          <article>
+            <h3>Data & Algorithms</h3>
+            <p>Python, R, pandas, tidyverse, logistic regression, A*, Dijkstra, statistical testing</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section projects-section" id="projects">
+        <div class="section-heading">
+          <p class="kicker">Selected work</p>
+          <h2>Projects built to be opened, tested, and discussed.</h2>
+        </div>
+
+        <div class="project-list">
+          <article class="project-card featured">
+            <a
+              class="project-media"
+              href="https://mockmarket-swart.vercel.app"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Open MockMarket live demo"
+            >
+              <img src="assets/mockmarket-dashboard.jpg" alt="MockMarket dashboard screenshot" />
             </a>
-            <div class="project-body">
-              <div class="project-meta">
-                <span>Full-stack deployed app</span>
+            <div class="project-content">
+              <div class="project-topline">
+                <p class="kicker">Deployed full-stack app</p>
                 <span>2026</span>
               </div>
               <h3>MockMarket</h3>
               <p>
-                A live paper-trading platform with JWT authentication, PostgreSQL persistence, BigDecimal financial calculations, Finnhub quote search, watchlists, trades, holdings, and portfolio analytics.
+                Paper-trading platform with JWT authentication, PostgreSQL persistence, Finnhub market
+                search, BigDecimal financial calculations, holdings, watchlists, trade history, and
+                portfolio analytics.
               </p>
-              <ul>
-                <li>Built Java 21/Spring Boot APIs for users, auth, trading, holdings, watchlists, and account state.</li>
-                <li>Deployed React on Vercel, Spring Boot on Render, and PostgreSQL on Neon.</li>
-              </ul>
-              <div class="project-footer">
-                <div class="tags">
-                  <span>Java</span><span>Spring Boot</span><span>React</span><span>PostgreSQL</span><span>JWT</span>
-                </div>
-                <div class="project-links">
-                  <a href="https://mockmarket-swart.vercel.app" target="_blank" rel="noreferrer">Live Website</a>
-                  <a href="https://github.com/prasun-rimal/mockmarket" target="_blank" rel="noreferrer">GitHub</a>
-                </div>
+              <div class="tags" aria-label="MockMarket technologies">
+                <span>Java 21</span>
+                <span>Spring Boot</span>
+                <span>React</span>
+                <span>PostgreSQL</span>
+                <span>JWT</span>
+              </div>
+              <div class="project-links">
+                <a href="https://mockmarket-swart.vercel.app" target="_blank" rel="noreferrer">Live demo</a>
+                <a href="https://github.com/prasun-rimal/mockmarket" target="_blank" rel="noreferrer">GitHub</a>
               </div>
             </div>
           </article>
 
-          <article class="project-row">
-            <a class="project-thumb" href="https://github.com/prasun-rimal/manhattan-delivery-optimizer" target="_blank" rel="noreferrer" aria-label="Open Manhattan Delivery Optimizer on GitHub">
-              <img src="assets/optimizer-app.jpg" alt="Manhattan delivery optimizer interface" />
+          <article class="project-card">
+            <a
+              class="project-media"
+              href="https://github.com/prasun-rimal/manhattan-delivery-optimizer"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Open Manhattan Delivery Optimizer GitHub repository"
+            >
+              <img src="assets/optimizer-app.jpg" alt="Manhattan Last-Mile Delivery Optimizer screenshot" />
             </a>
-            <div class="project-body">
-              <div class="project-meta">
-                <span>SURF research project</span>
-                <span>2025</span>
+            <div class="project-content">
+              <div class="project-topline">
+                <p class="kicker">SURF research project</p>
+                <span>2026</span>
               </div>
               <h3>Manhattan Last-Mile Delivery Optimizer</h3>
               <p>
-                The technical artifact for my Summer Undergraduate Research Fellowship: a Flask/Leaflet app comparing shortest-distance routes against delivery-aware routes in Manhattan.
+                Faculty-advised research project comparing shortest-distance routes with delivery-aware
+                routes using traffic, curb-access, truck-route, and parking/loading constraints.
               </p>
-              <ul>
-                <li>Implemented Dijkstra and A* on a graph enriched with traffic, curb-access, parking/loading, and truck-route constraints.</li>
-                <li>Wrote a formal research paper and presented findings after weekly advisor check-ins.</li>
-              </ul>
-              <div class="project-footer">
-                <div class="tags">
-                  <span>Python</span><span>Flask</span><span>NetworkX</span><span>Leaflet</span>
-                </div>
-                <div class="project-links">
-                  <a href="https://github.com/prasun-rimal/manhattan-delivery-optimizer" target="_blank" rel="noreferrer">GitHub</a>
-                </div>
+              <div class="tags" aria-label="Optimizer technologies">
+                <span>Python</span>
+                <span>NetworkX</span>
+                <span>Leaflet</span>
+                <span>Dijkstra</span>
+                <span>A*</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/prasun-rimal/manhattan-delivery-optimizer" target="_blank" rel="noreferrer">GitHub</a>
               </div>
             </div>
           </article>
 
-          <article class="project-row">
-            <a class="project-thumb" href="https://github.com/prasun-rimal/nyc-motor-vehicle-crash-analysis" target="_blank" rel="noreferrer" aria-label="Open NYC collision analysis on GitHub">
-              <img src="assets/nyc-density.jpg" alt="NYC crash density map" />
+          <article class="project-card">
+            <a
+              class="project-media"
+              href="https://github.com/prasun-rimal/nyc-motor-vehicle-crash-analysis"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Open NYC Collision Analysis GitHub repository"
+            >
+              <img src="assets/nyc-density.jpg" alt="NYC collision density visualization" />
             </a>
-            <div class="project-body">
-              <div class="project-meta">
-                <span>Statistical analysis</span>
+            <div class="project-content">
+              <div class="project-topline">
+                <p class="kicker">Statistical analysis</p>
                 <span>2026</span>
               </div>
               <h3>NYC Motor Vehicle Collision Analysis</h3>
               <p>
-                A reproducible R project analyzing 187,082 NYC collision records for crash frequency, injury risk, borough patterns, vehicle factors, and predictive modeling.
+                R analysis of 187,082 NYC collision records using spatial visualization, chi-square
+                testing, logistic regression, and AUC evaluation to study fatality risk patterns.
               </p>
-              <ul>
-                <li>Used chi-square tests and logistic regression to study injury outcomes and risk signals.</li>
-                <li>Improved injury prediction to 63.16% accuracy with an AUC of 0.673.</li>
-              </ul>
-              <div class="project-footer">
-                <div class="tags">
-                  <span>R</span><span>tidyverse</span><span>ggplot2</span><span>Logistic Regression</span>
-                </div>
-                <div class="project-links">
-                  <a href="https://github.com/prasun-rimal/nyc-motor-vehicle-crash-analysis" target="_blank" rel="noreferrer">GitHub</a>
-                </div>
+              <div class="tags" aria-label="Crash analysis technologies">
+                <span>R</span>
+                <span>tidyverse</span>
+                <span>ggplot2</span>
+                <span>Logistic Regression</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/prasun-rimal/nyc-motor-vehicle-crash-analysis" target="_blank" rel="noreferrer">GitHub</a>
               </div>
             </div>
           </article>
-        </section>
+        </div>
+      </section>
 
-        <section id="experience" class="section split-section">
-          <div class="section-heading">
-            <p class="eyebrow">Experience</p>
-            <h2>Research, teaching, and leadership</h2>
-          </div>
-          <div class="timeline">
-            <article>
-              <span class="date">June 2025 - August 2025</span>
-              <h3>Summer Research Fellow, SURF</h3>
-              <p>Conducted faculty-advised research on graph-based last-mile delivery optimization, met weekly with an advisor, wrote a formal paper, and presented the project to an audience.</p>
-            </article>
-            <article>
-              <span class="date">June 2025 - August 2025</span>
-              <h3>STEM Instructor Intern, Lavner Education</h3>
-              <p>Taught web development, game design, introductory programming, debugging, and technical problem solving to students ages 8-14.</p>
-            </article>
-            <article>
-              <span class="date">August 2025 - May 2026</span>
+      <section class="section experience-section" id="experience">
+        <div class="section-heading compact">
+          <p class="kicker">Experience</p>
+          <h2>Academic, teaching, and leadership work.</h2>
+        </div>
+        <div class="timeline">
+          <article>
+            <span>2026</span>
+            <div>
+              <h3>SURF Researcher</h3>
+              <p>
+                Built the Manhattan delivery optimizer, met weekly with a faculty advisor, wrote a paper,
+                and presented the research to an audience.
+              </p>
+            </div>
+          </article>
+          <article>
+            <span>2025</span>
+            <div>
+              <h3>Lavner Education</h3>
+              <p>
+                Supported students learning programming and problem solving through hands-on technical
+                instruction.
+              </p>
+            </div>
+          </article>
+          <article>
+            <span>2025</span>
+            <div>
               <h3>Vice President, South Asian Student Association</h3>
-              <p>Helped lead campus programming, event logistics, student engagement, outreach, and representation for a cultural student organization.</p>
-            </article>
-          </div>
-        </section>
+              <p>
+                Helped lead campus programming, executive-board coordination, cultural events, outreach,
+                and student engagement at St. Joseph's University New York.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
 
-        <section id="skills" class="section">
-          <div class="section-heading">
-            <p class="eyebrow">Skills</p>
-            <h2>Tools I use to build and analyze</h2>
-          </div>
-          <div class="skill-list">
-            <div><strong>Languages</strong><span>Java, Python, TypeScript, JavaScript, SQL, R, C++, MATLAB</span></div>
-            <div><strong>Backend</strong><span>Spring Boot, Spring Security, Spring Data JPA, JWT, Flask, Django, Express, REST APIs</span></div>
-            <div><strong>Frontend</strong><span>React, Vite, Tailwind CSS, Recharts, Leaflet, JavaFX</span></div>
-            <div><strong>Data</strong><span>R/tidyverse, Pandas, NumPy, ggplot2, statistical testing, logistic regression, visualization</span></div>
-            <div><strong>Cloud/DB</strong><span>PostgreSQL, MySQL, MongoDB, Oracle, Neon, Render, Vercel, Docker, AWS</span></div>
-          </div>
-        </section>
+      <section class="section contact-section" id="contact">
+        <div>
+          <p class="kicker">Contact</p>
+          <h2>Let’s build something practical.</h2>
+          <p>
+            I am looking for software engineering, full-stack, backend, and data-focused opportunities.
+          </p>
+        </div>
+        <div class="contact-actions">
+          <a class="button primary" href="mailto:prasunrimal02@gmail.com">Email me</a>
+          <a class="button secondary" href="https://github.com/prasun-rimal" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="button secondary" href="https://linkedin.com/in/prasunrimal" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+      </section>
+    </main>
 
-        <section id="contact" class="section contact-card">
-          <p class="eyebrow">Contact</p>
-          <h2>Let’s build something useful.</h2>
-          <p>I am open to new-grad software engineering, backend, full-stack, and data-focused roles.</p>
-          <div class="hero-actions">
-            <a class="button dark" href="mailto:prasunrimal02@gmail.com">prasunrimal02@gmail.com</a>
-            <a class="button light" href="assets/Prasun_Rimal_Resume.pdf" target="_blank" rel="noreferrer">Resume</a>
-            <a class="button light" href="https://linkedin.com/in/prasunrimal" target="_blank" rel="noreferrer">LinkedIn</a>
-          </div>
-        </section>
-      </main>
-    </div>
+    <footer>
+      <p>Designed and built by Prasun Rimal.</p>
+      <a href="#home">Back to top</a>
+    </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js?v=4"></script>
   </body>
 </html>
