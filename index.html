@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Prasun Rimal is a Mathematics and Computer Science graduate who builds full-stack applications, optimization tools, and data analysis projects."
+    />
+    <meta name="theme-color" content="#07111f" />
+    <title>Prasun Rimal | Software Developer</title>
+    <link rel="preload" href="assets/portrait.jpg" as="image" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Prasun Rimal home">
+        <span class="brand-mark">PR</span>
+        <span>Prasun Rimal</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#work">Work</a>
+        <a href="#experience">Experience</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero section-shell">
+        <div class="hero-copy">
+          <p class="eyebrow">Mathematics / Computer Science / Full-stack software</p>
+          <h1>I build deployed software, algorithmic tools, and data-driven systems.</h1>
+          <p class="hero-lede">
+            I am a St. Joseph's University New York graduate from Nepal with a background in
+            mathematics, computer science, research, and teaching. My work connects practical
+            engineering with optimization, statistics, and clean product design.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#work">View featured work</a>
+            <a class="button ghost" href="assets/Prasun_Rimal_Resume.pdf" target="_blank" rel="noreferrer">Resume</a>
+            <a class="button ghost" href="https://github.com/prasun-rimal" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+          <dl class="hero-stats" aria-label="Portfolio highlights">
+            <div>
+              <dt>3</dt>
+              <dd>flagship technical projects</dd>
+            </div>
+            <div>
+              <dt>187K+</dt>
+              <dd>NYC crash records analyzed</dd>
+            </div>
+            <div>
+              <dt>2026</dt>
+              <dd>Math/CS graduate</dd>
+            </div>
+          </dl>
+        </div>
+        <div class="hero-visual" aria-label="Professional portrait of Prasun Rimal">
+          <img src="assets/portrait.jpg" alt="Prasun Rimal in front of the Brooklyn Bridge" />
+          <div class="visual-card">
+            <span class="status-dot"></span>
+            <span>Open to software, full-stack, and data roles</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell marquee" aria-label="Core skills">
+        <span>Java 21</span>
+        <span>Spring Boot</span>
+        <span>React</span>
+        <span>TypeScript</span>
+        <span>PostgreSQL</span>
+        <span>Python</span>
+        <span>R/tidyverse</span>
+        <span>Graph Algorithms</span>
+        <span>Statistical Modeling</span>
+      </section>
+
+      <section id="work" class="section-shell">
+        <div class="section-heading">
+          <p class="eyebrow">Featured Work</p>
+          <h2>Projects that show the range: product, algorithms, and data.</h2>
+        </div>
+
+        <article class="project-card feature-project">
+          <div class="project-media">
+            <img src="assets/mockmarket-dashboard.jpg" alt="MockMarket dashboard screenshot" />
+          </div>
+          <div class="project-content">
+            <div class="project-topline">
+              <span class="project-kicker">Deployed full-stack app</span>
+              <span class="project-year">2026</span>
+            </div>
+            <h3>MockMarket</h3>
+            <p>
+              A full-stack paper trading platform with JWT authentication, live Finnhub quotes,
+              PostgreSQL persistence, portfolio analytics, watchlist search, and production deployment.
+            </p>
+            <ul class="impact-list">
+              <li>Built Spring Boot REST APIs for auth, trading, holdings, watchlists, and account state.</li>
+              <li>Used BigDecimal for cash, average cost, portfolio value, and gain/loss calculations.</li>
+              <li>Deployed React on Vercel, Spring Boot on Render, and PostgreSQL on Neon.</li>
+            </ul>
+            <div class="tag-row">
+              <span>Java 21</span><span>Spring Boot</span><span>React</span><span>PostgreSQL</span><span>JWT</span>
+            </div>
+            <div class="project-links">
+              <a href="https://mockmarket-swart.vercel.app" target="_blank" rel="noreferrer">Live demo</a>
+              <a href="https://github.com/prasun-rimal/mockmarket" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-media compact">
+              <img src="assets/optimizer-app.jpg" alt="Manhattan Delivery Optimizer route visualization" />
+            </div>
+            <div class="project-content">
+              <div class="project-topline">
+                <span class="project-kicker">SURF research project</span>
+                <span class="project-year">2025</span>
+              </div>
+              <h3>Manhattan Last-Mile Delivery Optimizer</h3>
+              <p>
+                A faculty-advised research artifact comparing shortest-distance routing with
+                delivery-aware routing for Manhattan last-mile logistics.
+              </p>
+              <ul class="impact-list">
+                <li>Implemented Dijkstra and A* across a constraint-enriched graph model.</li>
+                <li>Designed a cost function for traffic, curb access, parking/loading, and truck routes.</li>
+                <li>Presented the research and wrote a formal paper documenting methodology and results.</li>
+              </ul>
+              <div class="tag-row">
+                <span>Python</span><span>Flask</span><span>NetworkX</span><span>Leaflet</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/prasun-rimal/manhattan-delivery-optimizer" target="_blank" rel="noreferrer">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-media compact split-media">
+              <img src="assets/nyc-density.jpg" alt="NYC crash density visualization" />
+              <img src="assets/nyc-roc.jpg" alt="NYC crash logistic regression ROC curve" />
+            </div>
+            <div class="project-content">
+              <div class="project-topline">
+                <span class="project-kicker">Data science analysis</span>
+                <span class="project-year">2026</span>
+              </div>
+              <h3>NYC Motor Vehicle Collision Analysis</h3>
+              <p>
+                An R-based analysis of NYC crash records covering injury risk, crash patterns,
+                statistical tests, logistic regression, and spatial visualizations.
+              </p>
+              <ul class="impact-list">
+                <li>Analyzed 187,082 crash records from January 2024 to February 2026.</li>
+                <li>Used chi-square tests for borough, vehicle type, and contributing factor relationships.</li>
+                <li>Improved injury prediction accuracy to 63.16% with an AUC of 0.673.</li>
+              </ul>
+              <div class="tag-row">
+                <span>R</span><span>tidyverse</span><span>ggplot2</span><span>Logistic Regression</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/prasun-rimal/nyc-motor-vehicle-crash-analysis" target="_blank" rel="noreferrer">GitHub</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="experience" class="section-shell two-column-section">
+        <div class="section-heading sticky-heading">
+          <p class="eyebrow">Experience</p>
+          <h2>Research, teaching, and leadership with real communication demands.</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="timeline-date">June 2025 - August 2025</div>
+            <h3>Summer Research Fellow, SURF</h3>
+            <p class="muted">St. Joseph's University New York / Brooklyn, NY</p>
+            <p>
+              Conducted faculty-advised research on graph-based last-mile delivery optimization,
+              met weekly with an advisor, built the technical routing artifact, wrote a formal
+              research paper, and presented findings to an audience.
+            </p>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-date">June 2025 - August 2025</div>
+            <h3>STEM Instructor Intern</h3>
+            <p class="muted">Lavner Education / Pleasantville, NY</p>
+            <p>
+              Taught students ages 8-14 in web development, game design, introductory programming,
+              debugging, and technical problem solving while adapting instruction to different skill levels.
+            </p>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-date">August 2025 - May 2026</div>
+            <h3>Vice President, South Asian Student Association</h3>
+            <p class="muted">St. Joseph's University New York / Brooklyn, NY</p>
+            <p>
+              Helped lead cultural programming, student engagement, executive-board planning, event logistics,
+              and outreach for a campus organization focused on community and representation.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="about" class="section-shell about-section">
+        <div>
+          <p class="eyebrow">About</p>
+          <h2>From Nepal to New York, then into software, research, and data.</h2>
+        </div>
+        <div class="about-copy">
+          <p>
+            I moved from Nepal to the United States in 2022 to pursue my education and build a path
+            at the intersection of mathematics and computer science. That journey has shaped how I
+            work: I like systems that are practical, measurable, and grounded in careful thinking.
+          </p>
+          <p>
+            My projects reflect that mix. MockMarket is a deployed full-stack application. The Manhattan
+            delivery optimizer grew from a research fellowship and applies graph algorithms to urban logistics.
+            The NYC crash analysis uses statistics and visualization to explain public-safety data.
+          </p>
+          <p>
+            I am interested in software engineering, full-stack development, backend systems, data analysis,
+            and roles where I can keep learning while building useful tools.
+          </p>
+        </div>
+      </section>
+
+      <section class="section-shell skill-section">
+        <div class="section-heading">
+          <p class="eyebrow">Skills</p>
+          <h2>Technical range with a clear center: building useful systems.</h2>
+        </div>
+        <div class="skill-grid">
+          <div class="skill-card">
+            <h3>Full-stack</h3>
+            <p>Java, Spring Boot, Spring Security, Spring Data JPA, JWT, React, TypeScript, Vite, Tailwind CSS.</p>
+          </div>
+          <div class="skill-card">
+            <h3>Data and analysis</h3>
+            <p>R/tidyverse, Python, Pandas, NumPy, ggplot2, statistical testing, logistic regression, visualization.</p>
+          </div>
+          <div class="skill-card">
+            <h3>Algorithms</h3>
+            <p>Data structures, graph algorithms, Dijkstra, A*, optimization, mathematical modeling, route analysis.</p>
+          </div>
+          <div class="skill-card">
+            <h3>Cloud and tools</h3>
+            <p>PostgreSQL, Neon, Render, Vercel, Docker, Git, GitHub Pages, AWS, Linux, Oracle, MongoDB.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section-shell contact-section">
+        <p class="eyebrow">Contact</p>
+        <h2>Want to talk software, data, or new-grad roles?</h2>
+        <p>
+          I am open to software engineering, full-stack, backend, and data-focused opportunities.
+          The fastest way to reach me is email.
+        </p>
+        <div class="contact-actions">
+          <a class="button primary" href="mailto:prasunrimal02@gmail.com">Email me</a>
+          <a class="button ghost" href="assets/Prasun_Rimal_Resume.pdf" target="_blank" rel="noreferrer">Download resume</a>
+          <a class="button ghost" href="https://linkedin.com/in/prasunrimal" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="button ghost" href="https://github.com/prasun-rimal" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Built by Prasun Rimal.</span>
+      <a href="#top">Back to top</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
