@@ -1,40 +1,27 @@
-const revealItems = document.querySelectorAll(
-  ".about-card, .profile-card, .stats-grid div, .skill-grid article, .project-card, .timeline article, .contact-section"
-);
+const year = document.querySelector("#year");
 
-const revealObserver = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("is-visible");
-        revealObserver.unobserve(entry.target);
-      }
-    });
-  },
-  { threshold: 0.14 }
-);
-
-revealItems.forEach((item) => {
-  item.classList.add("reveal");
-  revealObserver.observe(item);
-});
+if (year) {
+  year.textContent = new Date().getFullYear();
+}
 
 const sections = document.querySelectorAll("main section[id]");
-const navLinks = document.querySelectorAll(".nav-links a[href^='#']");
+const navLinks = document.querySelectorAll('.nav-links a[href^="#"]');
 
-const activeObserver = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (!entry.isIntersecting) {
+if ("IntersectionObserver" in window) {
+  const activeSectionObserver = new IntersectionObserver(
+    (entries) => {
+      const visibleEntry = entries.find((entry) => entry.isIntersecting);
+
+      if (!visibleEntry) {
         return;
       }
 
       navLinks.forEach((link) => {
-        link.classList.toggle("is-active", link.getAttribute("href") === `#${entry.target.id}`);
+        link.classList.toggle("is-active", link.getAttribute("href") === `#${visibleEntry.target.id}`);
       });
-    });
-  },
-  { rootMargin: "-45% 0px -45% 0px", threshold: 0 }
-);
+    },
+    { rootMargin: "-42% 0px -52% 0px", threshold: 0 }
+  );
 
-sections.forEach((section) => activeObserver.observe(section));
+  sections.forEach((section) => activeSectionObserver.observe(section));
+}

@@ -5,292 +5,310 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Portfolio of Prasun Rimal, a full-stack developer and Mathematics/Computer Science graduate building Java, React, Python, and R projects."
+      content="Prasun Rimal is a software engineer building full-stack, AI workflow, data, and optimization systems with Java, Python, React, and PostgreSQL."
     />
-    <title>Prasun Rimal | Full-Stack Developer</title>
+    <meta property="og:title" content="Prasun Rimal | Software Engineer" />
+    <meta
+      property="og:description"
+      content="Full-stack applications, AI workflows, data analysis, and optimization research."
+    />
+    <meta property="og:image" content="assets/portrait.jpg" />
+    <title>Prasun Rimal | Software Engineer</title>
     <link rel="icon" href="assets/favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=4" />
+    <link rel="stylesheet" href="styles.css?v=5" />
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
     <header class="site-header">
-      <a class="brand" href="#home" aria-label="Prasun Rimal home">
-        <span>PR</span>
-        <strong>Prasun.dev</strong>
-      </a>
+      <a class="brand" href="#home" aria-label="Prasun Rimal home">Prasun Rimal</a>
       <nav class="nav-links" aria-label="Primary navigation">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
+        <a href="#work">Work</a>
         <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
         <a href="#contact">Contact</a>
-        <a class="nav-button" href="assets/Prasun_Rimal_Resume.pdf" target="_blank" rel="noreferrer">Resume</a>
       </nav>
+      <a class="header-resume" href="assets/Prasun_Rimal_Resume.pdf" target="_blank" rel="noreferrer">
+        Resume <span aria-hidden="true">↗</span>
+      </a>
     </header>
 
-    <main>
-      <section class="hero" id="home">
-        <div class="hero-backdrop" aria-hidden="true"></div>
+    <main id="main-content">
+      <section class="hero" id="home" aria-labelledby="hero-title">
+        <div class="hero-overlay" aria-hidden="true"></div>
         <div class="hero-content">
-          <p class="kicker">Full-stack developer</p>
-          <h1>Building useful software with math, data, and clean engineering.</h1>
-          <p class="hero-copy">
-            I am a Mathematics/Computer Science graduate from St. Joseph's University New York,
-            focused on Java, Spring Boot, React, Python, and R. I build projects that are deployed,
-            testable, and easy to understand.
+          <p class="eyebrow">Software engineer · Dallas, Texas</p>
+          <h1 id="hero-title">Prasun Rimal</h1>
+          <p class="hero-lede">
+            I build dependable software across backend systems, AI workflows, data analysis, and
+            user-facing products.
           </p>
-          <div class="hero-actions" aria-label="Primary actions">
-            <a class="button primary" href="#projects">View projects</a>
-            <a class="button secondary" href="mailto:prasunrimal02@gmail.com">Contact me</a>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#work">Explore my work</a>
+            <a class="button button-secondary" href="mailto:prasunrimal02@gmail.com">Email me</a>
           </div>
-          <div class="social-strip" aria-label="Profile links">
-            <a href="https://github.com/prasun-rimal" target="_blank" rel="noreferrer">GitHub</a>
-            <a href="https://linkedin.com/in/prasunrimal" target="_blank" rel="noreferrer">LinkedIn</a>
-            <a href="https://mockmarket-swart.vercel.app" target="_blank" rel="noreferrer">MockMarket</a>
+          <div class="hero-links" aria-label="Social profiles">
+            <a href="https://github.com/prasun-rimal" target="_blank" rel="noreferrer">GitHub ↗</a>
+            <a href="https://www.linkedin.com/in/prasunrimal/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+            <a href="mailto:prasunrimal02@gmail.com">Gmail ↗</a>
           </div>
         </div>
       </section>
 
-      <section class="section about-section" id="about">
-        <div class="section-heading">
-          <p class="kicker">About me</p>
-          <h2>From Nepal to New York, now building from Texas.</h2>
+      <section class="intro section" id="about">
+        <div class="section-label">01 · About</div>
+        <div class="intro-copy">
+          <h2>From Nepal to New York to the work I am building now.</h2>
+          <p class="lead">
+            I moved from Nepal to the United States in 2022 to study mathematics and computer science.
+            That move taught me to adapt quickly, ask better questions, and stay persistent when the
+            answer is not obvious.
+          </p>
+          <div class="intro-columns">
+            <p>
+              I am drawn to problems where engineering and analysis meet. My work ranges from a deployed
+              paper-trading platform and an AI-assisted payroll operations system to graph optimization
+              research and statistical analysis of NYC collision data.
+            </p>
+            <p>
+              I care about the full product: understandable code, precise data, safe workflows, useful
+              interfaces, and a deployment that someone can actually open. I am currently pursuing
+              software engineering, backend, full-stack, and data-focused opportunities.
+            </p>
+          </div>
         </div>
-        <div class="about-grid">
-          <article class="about-card">
-            <p>
-              I moved from Nepal to the United States in 2022 to pursue computer science and mathematics.
-              That journey shaped how I work: I learn fast, ask direct questions, and care about building
-              things that make sense in the real world.
-            </p>
-            <p>
-              My recent work includes a deployed paper-trading platform, a faculty-advised route optimizer
-              research project, and an R-based NYC collision analysis. I like projects where algorithms,
-              backend systems, and user experience all have to meet in one finished product.
-            </p>
+      </section>
+
+      <section class="skills-band" aria-labelledby="skills-title">
+        <div class="skills-heading">
+          <p class="eyebrow dark">Technical toolkit</p>
+          <h2 id="skills-title">Built across the stack.</h2>
+        </div>
+        <div class="skills-list">
+          <article>
+            <h3>Languages</h3>
+            <p>Java, Python, TypeScript, JavaScript, SQL, R, C++, HTML, CSS</p>
           </article>
-          <aside class="profile-card" aria-label="Profile summary">
-            <img src="assets/portrait.jpg" alt="Prasun Rimal in a blue suit near the Brooklyn Bridge" />
-            <div>
-              <strong>Prasun Rimal</strong>
-              <span>Dallas, TX</span>
-            </div>
-          </aside>
-        </div>
-        <div class="stats-grid" aria-label="Highlights">
-          <div>
-            <span>3.811</span>
-            <p>GPA</p>
-          </div>
-          <div>
-            <span>6x</span>
-            <p>Dean's List</p>
-          </div>
-          <div>
-            <span>2</span>
-            <p>Honor societies</p>
-          </div>
-          <div>
-            <span>2026</span>
-            <p>B.S. graduate</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="section skills-section" id="skills">
-        <div class="section-heading compact">
-          <p class="kicker">Toolkit</p>
-          <h2>Comfortable across backend, frontend, data, and deployment.</h2>
-        </div>
-        <div class="skill-grid">
           <article>
             <h3>Backend</h3>
-            <p>Java 21, Spring Boot, REST APIs, JWT auth, PostgreSQL, JPA, Maven, Docker</p>
+            <p>Spring Boot, Spring Security, Spring Data JPA, FastAPI, Flask, REST APIs, JWT</p>
           </article>
           <article>
             <h3>Frontend</h3>
-            <p>React, TypeScript, JavaScript, responsive UI, Vite, Vercel, GitHub Pages</p>
+            <p>React, Next.js, Vite, responsive interfaces, Recharts, Leaflet</p>
           </article>
           <article>
-            <h3>Data & Algorithms</h3>
-            <p>Python, R, pandas, tidyverse, logistic regression, A*, Dijkstra, statistical testing</p>
+            <h3>Data & AI</h3>
+            <p>LangGraph, Gemini, pgvector, Pandas, tidyverse, ggplot2, logistic regression</p>
+          </article>
+          <article>
+            <h3>Infrastructure</h3>
+            <p>PostgreSQL, Neon, Render, Vercel, Docker, Git, GitHub Actions</p>
+          </article>
+          <article>
+            <h3>Foundations</h3>
+            <p>Data structures, algorithms, graph search, optimization, OOP, statistical analysis</p>
           </article>
         </div>
       </section>
 
-      <section class="section projects-section" id="projects">
-        <div class="section-heading">
-          <p class="kicker">Selected work</p>
-          <h2>Projects built to be opened, tested, and discussed.</h2>
+      <section class="work section" id="work">
+        <div class="section-header">
+          <div>
+            <div class="section-label">02 · Selected work</div>
+            <h2>Projects with working code and real outcomes.</h2>
+          </div>
+          <a class="text-link" href="https://github.com/prasun-rimal?tab=repositories" target="_blank" rel="noreferrer">
+            All repositories ↗
+          </a>
         </div>
 
         <div class="project-list">
-          <article class="project-card featured">
-            <a
-              class="project-media"
-              href="https://mockmarket-swart.vercel.app"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="Open MockMarket live demo"
-            >
-              <img src="assets/mockmarket-dashboard.jpg" alt="MockMarket dashboard screenshot" />
+          <article class="project-row">
+            <a class="project-image" href="https://payrollops-ai.vercel.app/login" target="_blank" rel="noreferrer" aria-label="Open PayrollOps AI live demo">
+              <img src="assets/payrollops-login.jpg" alt="PayrollOps AI secure demo login" />
             </a>
-            <div class="project-content">
-              <div class="project-topline">
-                <p class="kicker">Deployed full-stack app</p>
-                <span>2026</span>
+            <div class="project-details">
+              <div class="project-meta"><span>AI operations platform</span><span>2026</span></div>
+              <h3>PayrollOps AI</h3>
+              <p>
+                A full-stack payroll exception control center that combines deterministic validation with
+                grounded Gemini analysis. It includes role-based access, human approval, country-aware
+                policy retrieval, structured outputs, and a persistent audit trail.
+              </p>
+              <p class="stack">Python · FastAPI · Next.js · PostgreSQL · pgvector · LangGraph · Gemini</p>
+              <div class="project-links">
+                <a href="https://payrollops-ai.vercel.app/login" target="_blank" rel="noreferrer">Live demo ↗</a>
+                <a href="https://github.com/prasun-rimal/payrollops-ai" target="_blank" rel="noreferrer">Source code ↗</a>
               </div>
+            </div>
+          </article>
+
+          <article class="project-row">
+            <a class="project-image" href="https://mockmarket-swart.vercel.app" target="_blank" rel="noreferrer" aria-label="Open MockMarket live demo">
+              <img src="assets/mockmarket-dashboard.jpg" alt="MockMarket portfolio dashboard" />
+            </a>
+            <div class="project-details">
+              <div class="project-meta"><span>Deployed trading platform</span><span>2026</span></div>
               <h3>MockMarket</h3>
               <p>
-                Paper-trading platform with JWT authentication, PostgreSQL persistence, Finnhub market
-                search, BigDecimal financial calculations, holdings, watchlists, trade history, and
-                portfolio analytics.
+                A paper-trading platform with account authentication, live Finnhub quotes, stock search,
+                watchlists, buying and selling, trade history, and portfolio analytics. Financial values
+                use BigDecimal and user data persists in cloud PostgreSQL.
               </p>
-              <div class="tags" aria-label="MockMarket technologies">
-                <span>Java 21</span>
-                <span>Spring Boot</span>
-                <span>React</span>
-                <span>PostgreSQL</span>
-                <span>JWT</span>
-              </div>
+              <p class="stack">Java 21 · Spring Boot · React · TypeScript · PostgreSQL · JWT</p>
               <div class="project-links">
-                <a href="https://mockmarket-swart.vercel.app" target="_blank" rel="noreferrer">Live demo</a>
-                <a href="https://github.com/prasun-rimal/mockmarket" target="_blank" rel="noreferrer">GitHub</a>
+                <a href="https://mockmarket-swart.vercel.app" target="_blank" rel="noreferrer">Live demo ↗</a>
+                <a href="https://github.com/prasun-rimal/mockmarket" target="_blank" rel="noreferrer">Source code ↗</a>
               </div>
             </div>
           </article>
 
-          <article class="project-card">
-            <a
-              class="project-media"
-              href="https://github.com/prasun-rimal/manhattan-delivery-optimizer"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="Open Manhattan Delivery Optimizer GitHub repository"
-            >
-              <img src="assets/optimizer-app.jpg" alt="Manhattan Last-Mile Delivery Optimizer screenshot" />
+          <article class="project-row">
+            <a class="project-image" href="https://github.com/prasun-rimal/manhattan-delivery-optimizer" target="_blank" rel="noreferrer" aria-label="Open Manhattan Delivery Optimizer repository">
+              <img src="assets/optimizer-app.jpg" alt="Manhattan delivery route comparison application" />
             </a>
-            <div class="project-content">
-              <div class="project-topline">
-                <p class="kicker">SURF research project</p>
-                <span>2026</span>
-              </div>
+            <div class="project-details">
+              <div class="project-meta"><span>Faculty-advised research</span><span>2025</span></div>
               <h3>Manhattan Last-Mile Delivery Optimizer</h3>
               <p>
-                Faculty-advised research project comparing shortest-distance routes with delivery-aware
-                routes using traffic, curb-access, truck-route, and parking/loading constraints.
+                A research prototype comparing shortest-distance and delivery-aware routes under traffic,
+                curb-access, parking, loading, and truck-route constraints. Dijkstra and A* validate the
+                optimized path, which is rendered in an interactive web application.
               </p>
-              <div class="tags" aria-label="Optimizer technologies">
-                <span>Python</span>
-                <span>NetworkX</span>
-                <span>Leaflet</span>
-                <span>Dijkstra</span>
-                <span>A*</span>
-              </div>
+              <p class="stack">Python · Flask · NetworkX · Pandas · Leaflet · OpenStreetMap</p>
               <div class="project-links">
-                <a href="https://github.com/prasun-rimal/manhattan-delivery-optimizer" target="_blank" rel="noreferrer">GitHub</a>
+                <a href="https://github.com/prasun-rimal/manhattan-delivery-optimizer" target="_blank" rel="noreferrer">Source code ↗</a>
               </div>
             </div>
           </article>
 
-          <article class="project-card">
-            <a
-              class="project-media"
-              href="https://github.com/prasun-rimal/nyc-motor-vehicle-crash-analysis"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="Open NYC Collision Analysis GitHub repository"
-            >
-              <img src="assets/nyc-density.jpg" alt="NYC collision density visualization" />
+          <article class="project-row">
+            <a class="project-image" href="https://github.com/prasun-rimal/nyc-motor-vehicle-crash-analysis" target="_blank" rel="noreferrer" aria-label="Open NYC collision analysis repository">
+              <img src="assets/nyc-density.jpg" alt="NYC motor vehicle collision density visualization" />
             </a>
-            <div class="project-content">
-              <div class="project-topline">
-                <p class="kicker">Statistical analysis</p>
-                <span>2026</span>
-              </div>
+            <div class="project-details">
+              <div class="project-meta"><span>Statistical analysis</span><span>2025</span></div>
               <h3>NYC Motor Vehicle Collision Analysis</h3>
               <p>
-                R analysis of 187,082 NYC collision records using spatial visualization, chi-square
-                testing, logistic regression, and AUC evaluation to study fatality risk patterns.
+                An R-based study of more than 187,000 collision records using spatial visualization,
+                chi-square testing, logistic regression, and AUC evaluation to investigate patterns and
+                factors associated with fatal outcomes.
               </p>
-              <div class="tags" aria-label="Crash analysis technologies">
-                <span>R</span>
-                <span>tidyverse</span>
-                <span>ggplot2</span>
-                <span>Logistic Regression</span>
-              </div>
+              <p class="stack">R · tidyverse · ggplot2 · Logistic regression · Spatial analysis</p>
               <div class="project-links">
-                <a href="https://github.com/prasun-rimal/nyc-motor-vehicle-crash-analysis" target="_blank" rel="noreferrer">GitHub</a>
+                <a href="https://github.com/prasun-rimal/nyc-motor-vehicle-crash-analysis" target="_blank" rel="noreferrer">Source code ↗</a>
               </div>
             </div>
           </article>
         </div>
       </section>
 
-      <section class="section experience-section" id="experience">
-        <div class="section-heading compact">
-          <p class="kicker">Experience</p>
-          <h2>Academic, teaching, and leadership work.</h2>
+      <section class="experience section" id="experience">
+        <div class="section-header">
+          <div>
+            <div class="section-label">03 · Experience</div>
+            <h2>Research, teaching, leadership, and data work.</h2>
+          </div>
         </div>
+
         <div class="timeline">
           <article>
-            <span>2026</span>
-            <div>
-              <h3>SURF Researcher</h3>
-              <p>
-                Built the Manhattan delivery optimizer, met weekly with a faculty advisor, wrote a paper,
-                and presented the research to an audience.
-              </p>
-            </div>
-          </article>
-          <article>
-            <span>2025</span>
-            <div>
-              <h3>Lavner Education</h3>
-              <p>
-                Supported students learning programming and problem solving through hands-on technical
-                instruction.
-              </p>
-            </div>
-          </article>
-          <article>
-            <span>2025</span>
+            <div class="timeline-date">Aug 2025 - May 2026</div>
             <div>
               <h3>Vice President, South Asian Student Association</h3>
-              <p>
-                Helped lead campus programming, executive-board coordination, cultural events, outreach,
-                and student engagement at St. Joseph's University New York.
-              </p>
+              <p class="organization">St. Joseph's University New York · Brooklyn, NY</p>
+              <p>Helped lead cultural programming, executive-board coordination, event logistics, outreach, and community engagement across campus.</p>
+            </div>
+          </article>
+          <article>
+            <div class="timeline-date">Jun 2025 - Aug 2025</div>
+            <div>
+              <h3>STEM Instructor Intern</h3>
+              <p class="organization">Lavner Education · Pleasantville, NY</p>
+              <p>Taught project-based technology courses to students ages 8-14, covering web development, introductory machine learning, Scratch game design, debugging, and digital media.</p>
+            </div>
+          </article>
+          <article>
+            <div class="timeline-date">May 2025 - Aug 2025</div>
+            <div>
+              <h3>Summer Research Fellow</h3>
+              <p class="organization">Summer Undergraduate Research Fellowship · St. Joseph's University New York</p>
+              <p>Designed and evaluated a graph-based last-mile delivery optimizer through weekly faculty reviews, then documented the work in a formal paper and presented the findings to an audience.</p>
+            </div>
+          </article>
+          <article>
+            <div class="timeline-date">Nov 2020 - Dec 2020</div>
+            <div>
+              <h3>Data Entry Intern</h3>
+              <p class="organization">Centre for Health and Disease Studies · Dang District, Nepal</p>
+              <p>Supported a community health survey through accurate data entry, cross-checking, and Excel-based workflow improvements for a medical research team.</p>
             </div>
           </article>
         </div>
       </section>
 
-      <section class="section contact-section" id="contact">
-        <div>
-          <p class="kicker">Contact</p>
-          <h2>Let’s build something practical.</h2>
-          <p>
-            I am looking for software engineering, full-stack, backend, and data-focused opportunities.
-          </p>
+      <section class="education section" id="education">
+        <div class="section-header">
+          <div>
+            <div class="section-label">04 · Education & recognition</div>
+            <h2>The foundation behind the work.</h2>
+          </div>
         </div>
-        <div class="contact-actions">
-          <a class="button primary" href="mailto:prasunrimal02@gmail.com">Email me</a>
-          <a class="button secondary" href="https://github.com/prasun-rimal" target="_blank" rel="noreferrer">GitHub</a>
-          <a class="button secondary" href="https://linkedin.com/in/prasunrimal" target="_blank" rel="noreferrer">LinkedIn</a>
+        <div class="education-grid">
+          <div class="education-list">
+            <article>
+              <p class="year">2022 - 2026</p>
+              <h3>St. Joseph's University New York</h3>
+              <p>B.S. Mathematics/Computer Science and B.S. Mathematics</p>
+              <p class="detail">GPA 3.811 / 4.000 · Brooklyn, New York</p>
+            </article>
+            <article>
+              <p class="year">2018 - 2020</p>
+              <h3>St. Xavier's College, Maitighar</h3>
+              <p>GCE A-Levels in Physics, Chemistry, Mathematics, and Computer Science</p>
+              <p class="detail">Kathmandu, Nepal</p>
+            </article>
+          </div>
+          <aside class="awards" aria-labelledby="awards-title">
+            <p class="eyebrow dark">Awards & honors</p>
+            <h3 id="awards-title">Recognition</h3>
+            <ul>
+              <li>Sigma Iota Chi Honor Society</li>
+              <li>Delta Epsilon Sigma Honor Society</li>
+              <li>Dean's List, six semesters</li>
+              <li>Dean's Scholarship recipient</li>
+              <li>Summer Undergraduate Research Fellowship recipient</li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <p class="eyebrow">Let's connect</p>
+        <h2>Looking for an engineer who can move from problem to working product?</h2>
+        <p>I am open to software engineering, backend, full-stack, AI product, and data-focused opportunities.</p>
+        <div class="contact-links">
+          <a class="button button-light" href="mailto:prasunrimal02@gmail.com">prasunrimal02@gmail.com</a>
+          <a href="https://www.linkedin.com/in/prasunrimal/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+          <a href="https://github.com/prasun-rimal" target="_blank" rel="noreferrer">GitHub ↗</a>
+          <a href="assets/Prasun_Rimal_Resume.pdf" target="_blank" rel="noreferrer">Resume ↗</a>
         </div>
       </section>
     </main>
 
     <footer>
-      <p>Designed and built by Prasun Rimal.</p>
-      <a href="#home">Back to top</a>
+      <p>© <span id="year">2026</span> Prasun Rimal</p>
+      <p>Designed and built in Dallas, Texas.</p>
+      <a href="#home">Back to top ↑</a>
     </footer>
 
-    <script src="script.js?v=4"></script>
+    <script src="script.js?v=5"></script>
   </body>
 </html>
